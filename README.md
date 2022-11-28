@@ -4,11 +4,11 @@ A convolutional neural network is trained to classify the electromagnetic modes 
 
 
 ## DATA
-The training and validation datasets were composed of 8-bit gray scale images of Hermite-Gaussian electromagnetic modes supported by optical waveguides, available in two resolutions 32x32 and 16x16. The training dataset has 10 000 pictures and the test dataset has 2000 pictures; For details, see 1_Generate dataset.ipynb.
+The training and validation datasets were composed of 8-bit gray scale images of Hermite-Gaussian electromagnetic modes supported by optical waveguides, available in two resolutions 32x32 and 16x16. The training dataset has 10 000 pictures and the test dataset has 2000 pictures; For details, see *1_Generate dataset.ipynb*.
 
 
 ## MODEL 
-Convolutional neural network with 2 convolutional layers and 3 fully connected layers. This architecture is based on the popular Le-Net5. The model topology was adapted through bayesian optimisation to maximise the accuracy after 2 training epochs. For details, see 2_Build and optimise CNN for image recognition.ipynb.
+Convolutional neural network with 2 convolutional layers and 3 fully connected layers. This architecture is based on the popular Le-Net5. The model topology was adapted through bayesian optimisation to maximise the accuracy after 2 training epochs. For details, see *2_Build and optimise CNN for image recognition.ipynb*.
 
 
 ## HYPERPARAMETER OPTIMSATION
@@ -28,13 +28,11 @@ The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate func
 ## RESULTS
 - The model performance was measured in terms of classification accuracy (acc) on an independent test set, containing 2 000 images. Several CNN configurations produce satisfying results. Around 30 configurations have acc > 95\%, after only 2 epochs of training. With 3 training epochs accuracies in excess of 99\% are found.
 
-- The progression of the optimisation is shown below:
+- The progression of the Bayesian optimisation is shown below:
  ![optimisation of accuracy](acc_vs_optimization.png)
 Training the CNN network with 2 epochs took an average of 1 minutes. This allowed to run a large number of optimisation iterations (1400) over 24hours. As suggested by the picture, a highly explorative strategy was used, as i was curious about the diversity of CNN topologies that could perform well.
 
-- An interesting step
-
-- For more details, see 3_Load Bayesian optimisation results.ipynb.
+- For more details, see *3_Load Bayesian optimisation results.ipynb*.
 
 
 ## CONTACT DETAILS
