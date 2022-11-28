@@ -29,7 +29,7 @@ This convolutional neural network model classifies pictures of the cross-section
 
 
 ## Performance
-- The model performance was measured in terms of classification accuracy (acc) on an independent test set, containing 2 000 images. Several configurations yield satisfying results. Around 30 configurations have acc > 95\%, after only 2 epochs of training. With 3 training epochs accuracies in excess of 99\% are found.
+- The model performance was measured in terms of classification accuracy (acc) on an independent test set, containing 2 000 images. Several CNN configurations produce satisfying results. Around 30 configurations have acc > 95\%, after only 2 epochs of training. With 3 training epochs accuracies in excess of 99\% are found.
 - For more details, see 3_Load Bayesian optimisation results.ipynb.
 
 ## Limitations

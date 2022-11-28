@@ -26,10 +26,11 @@ The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate func
 
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
+- The model performance was measured in terms of classification accuracy (acc) on an independent test set, containing 2 000 images. Several CNN configurations produce satisfying results. Around 30 configurations have acc > 95\%, after only 2 epochs of training. With 3 training epochs accuracies in excess of 99\% are found.
+- The progression of the optimisation is shown below:
+You can include images of plots using the code below: [optimisation of accuracy](acc_vs_optimization.png)
+- For more details, see 3_Load Bayesian optimisation results.ipynb.
 
-You can include images of plots using the code below:
-![Screenshot](image.png)
 
 ## CONTACT DETAILS
 Rui Vasconcelos is the author of this model and can be contacted through his personal email (alhavaite.rui@gmail.com) or Linkedin page (www.linkedin.com/in/rui-f-vasconcelos);
