@@ -1,17 +1,29 @@
-# PROJECT TITLE 
+# CNN to classify electromagnetic modes in waveguides
 
+A convolutional neural network is trained to classify the electromagnetic modes conducted by an optical waveguide, based on a picture of its cross-section. The model was trained on an analytically generated dataset with 10 000 pictures. The topology of the neural network was tuned through Bayesian optimisation, to maximise its performance after 2 training epochs. Performance accuracies in excess of 99\% were found.
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
 
 ## DATA
-A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
+The training and validation datasets were composed of 8-bit gray scale images of Hermite-Gaussian electromagnetic modes supported by optical waveguides, available in two resolutions 32x32 and 16x16. The training dataset has 10 000 pictures and the test dataset has 2000 pictures; For details, see 1_Generate dataset.ipynb.
+
 
 ## MODEL 
-A summary of the model you’re using and why you chose it. 
+Convolutional neural network with 2 convolutional layers and 3 fully connected layers. This architecture is based on the popular Le-Net5. The model topology was adapted through bayesian optimisation to maximise the accuracy after 2 training epochs. For details, see 2_Build and optimise CNN for image recognition.ipynb.
+
 
 ## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+The free parameters in the Bayesian optimisation were:
+
+- The width of the convolution filters 1 and 2;
+- The output depth of the convolution filter 1;
+- The output depth of the convolution filter 2 ;
+- Number of output features of fully connected layer 1;
+- Number of output features of fully connected layer 2;
+- The learning rate of the stochastic gradient descent optimiser;
+- The momentum of the stochastic gradient descent optimiser.
+
+The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate function and used the expected improvement criterium on the acquisition function. For each new iteration, the GP was fit by maximisation the log marginal likelihood. The results of the optimisation were progressively stored in a pandas Dataframe and stored as a pickle file. They are available under /optimisation_results/.
+
 
 ## RESULTS
 A summary of your results and what you can learn from your model 
@@ -19,6 +31,6 @@ A summary of your results and what you can learn from your model
 You can include images of plots using the code below:
 ![Screenshot](image.png)
 
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
+## CONTACT DETAILS
+Rui Vasconcelos is the author of this model and can be contacted through his personal email (alhavaite.rui@gmail.com) or Linkedin page (www.linkedin.com/in/rui-f-vasconcelos);
 
