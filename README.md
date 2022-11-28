@@ -27,8 +27,13 @@ The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate func
 
 ## RESULTS
 - The model performance was measured in terms of classification accuracy (acc) on an independent test set, containing 2 000 images. Several CNN configurations produce satisfying results. Around 30 configurations have acc > 95\%, after only 2 epochs of training. With 3 training epochs accuracies in excess of 99\% are found.
+
 - The progression of the optimisation is shown below:
-You can include images of plots using the code below: ![optimisation of accuracy](acc_vs_optimization.png)
+ ![optimisation of accuracy](acc_vs_optimization.png)
+Training the CNN network with 2 epochs took an average of 1 minutes. This allowed to run a large number of optimisation iterations (1400) over 24hours. As suggested by the picture, a highly explorative strategy was used, as i was curious about the diversity of CNN topologies that could perform well.
+
+- An interesting step
+
 - For more details, see 3_Load Bayesian optimisation results.ipynb.
 
 
