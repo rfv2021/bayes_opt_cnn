@@ -22,7 +22,7 @@ The free parameters in the Bayesian optimisation were:
 - The learning rate of the stochastic gradient descent optimiser;
 - The momentum of the stochastic gradient descent optimiser.
 
-The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate function and used the expected improvement criterium on the acquisition function. For each new iteration, the GP was fit by maximisation of the log marginal likelihood. The results of the optimisation were progressively stored in a pandas Dataframe and stored as a pickle file. They are available under /optimisation_results/ and can be easily visualised with [3_Load Bayesian optimisation results.ipynb]().
+The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate function and used the expected improvement criterium on the acquisition function. For each new iteration, the GP was fit by maximisation of the log marginal likelihood. The results of the optimisation were progressively stored in a pandas Dataframe and stored as a pickle file. They are available under /optimisation_results/ and can be easily visualised with [3_Load Bayesian optimisation results.ipynb](https://github.com/rfv2021/bayes_opt_cnn/blob/main/2_Build%20and%20optimise%20CNN%20model%20for%20image%20recognition.ipynb).
 
 
 ## RESULTS
@@ -32,7 +32,7 @@ The Bayesian optimisation was based in a Gaussian Process (GP) as surrogate func
  ![optimisation of accuracy](acc_vs_optimization.png)
 - Training the CNN network with 2 epochs took an average of 1 minutes. This allowed to run a large number of optimisation iterations (1400) over 24hours. As suggested by the picture, a highly explorative strategy was used, as i was curious about the diversity of CNN topologies that could perform well.
 
-- For more details, see **3_Load Bayesian optimisation results.ipynb**.
+- For more details, see [3_Load Bayesian optimisation results.ipynb](https://github.com/rfv2021/bayes_opt_cnn/blob/main/2_Build%20and%20optimise%20CNN%20model%20for%20image%20recognition.ipynb).
 
 
 ## CONTACT DETAILS
