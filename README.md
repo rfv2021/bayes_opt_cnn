@@ -4,7 +4,7 @@ A convolutional neural network is trained to classify the electromagnetic modes 
 
 
 ## DATA
-The training and validation datasets were composed of 8-bit gray scale images of Hermite-Gaussian electromagnetic modes supported by optical waveguides, available in two resolutions 32x32 and 16x16. The training dataset has 10 000 pictures and the test dataset has 2000 pictures; For details, see **1_Generate dataset.ipynb**.
+The training and validation datasets were composed of 8-bit gray scale images of Hermite-Gaussian electromagnetic modes supported by optical waveguides, available in two resolutions 32x32 and 16x16. The training dataset has 10 000 pictures and the test dataset has 2000 pictures; For details, see [1_Generate dataset.ipynb] (https://github.com/rfv2021/bayes_opt_cnn/blob/main/1_Generate%20dataset.ipynb).
 
 
 ## MODEL 
